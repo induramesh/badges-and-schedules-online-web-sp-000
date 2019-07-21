@@ -7,3 +7,6 @@ def batch_badge_creator(names)
     name = badge_maker(name)
   end 
 end 
+
+def assign_rooms(speakers)
+  rooms = [1,2,3,4,5,6,7]
