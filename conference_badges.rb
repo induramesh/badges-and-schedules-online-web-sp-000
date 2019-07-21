@@ -19,6 +19,8 @@ end
 def printer(attendees)
  attendees.each do |name|
     puts badge_maker(name)
-    puts assign_rooms(name)
+  end 
+   attendees.each do |name|
+    puts "Hello, #{name}! You'll be assigned to room #{attendees.index(name) + 1}!")
   end 
 end 
