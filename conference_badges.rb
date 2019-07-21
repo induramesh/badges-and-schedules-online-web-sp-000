@@ -17,11 +17,12 @@ def assign_rooms(speakers)
 end 
 
 def printer(attendees)
- attendees.each do |name|
-    puts badge_maker(name)
+  names = batch_badge_creator(attendees)
+  names.each do |name|
+    puts name
   end 
-   attendees.each do |name|
-    puts "Hello, #{name}! You'll be assigned to room #{attendees.index(name) + 1}!")
-  end 
+  rooms = assign_rooms(attendees)
+  rooms.each do |room|
+    puts room
   end 
 end 
